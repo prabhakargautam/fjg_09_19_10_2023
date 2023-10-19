@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Vendor List</title>
+</head>
+<body>
+   <div class="container pt-5">
+        <div class="card mb-4">
+            <div class="card-body">
+<div class="alert alert-primary">
+    <strong><h3> Vendor List </h3>
+  </div>
+<hr>
+<div class="alert alert-warning">    <strong><h4> Vendor Reports </h4>
+  </div>
+            <hr>    
+ <form name="vendorList">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="fromDate">Choose From Date</label>
+                        <div class="input-group">
+                            <input type="date" class="form-control" id="fromDate" placeholder="dd/mm/yyyy--:--">
+                            <div class="input-group-append">
+                                <button class="btn" type="button" id="fromDateCalendar">
+                                    
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="toDate">Choose To Date</label>
+                        <div class="input-group">
+                            <input type="date" class="form-control" id="toDate" placeholder="dd/mm/yyyy--:--">
+                            <div class="input-group-append">
+                                <button class="btn" type="button" id="toDateCalendar">
+                                    
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="vendorName">Vendor Name</label>
+                        <input type="text" class="form-control" id="vendorName" placeholder="Enter Vendor Name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="approvedStatus">Approved Status</label>
+                        <select class="form-select" id="approvedStatus">
+                            <option value="" disabled selected>Select Status</option>
+                            <option value="approved">Approved</option>
+                            <option value="pending">Pending</option>
+                            <option value="rejected">Rejected</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                    <button type="button" class="btn btn-primary mt-3">Search</button>
+                    <button type="reset" class="btn btn-secondary ml-3 mt-3">Reset</button>
+                </div>
+            </div>
+        </form>
+</div>
+        </div>
+         <div class="card">
+            <div class="card-body">
+                <div class="alert alert-info">
+    <strong></strong> Show 10 entries
+  </div>
+                <table class="table table-dark table-hover table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Vendor Name</th>
+                            <th>Vendor ID</th>
+                            <th>Contact Person</th>
+                            <th>Mobile No</th>
+                            <th>Is Approved</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-primary">
+                             <td>NTPC</td>
+                    <td>101</td>
+                    <td>Prabhakar Gautam</td>
+                    <td>8962630314</td>
+                    <td>Approved</td>
+                    <td><button type="button" class="btn btn-success btn-lg dropdown-toggle hide-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+        <i class="fa-solid fa-plus"></i>
+                        </tr>
+                        <tr class="table-success">
+                            <td>CSK</td>
+                    <td>102</td>
+                    <td>M.S.Dhoni</td>
+                    <td>5559876543</td>
+                    <td>Pending For Approval</td>
+                    <td><button type="button" class="btn btn-success btn-lg dropdown-toggle hide-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+        <i class="fa-solid fa-plus"></i>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>RCB</td>
+                    <td>103</td>
+                    <td>Virat Kohli</td>
+                    <td>5555234678</td>
+                    <td>Approved</td>
+                    <td><button type="button" class="btn btn-success btn-lg dropdown-toggle hide-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+        <i class="fa-solid fa-plus"></i>
+                        </tr>
+   <tr class="table-info">
+                             <td>HDFC</td>
+                    <td>104</td>
+                    <td>Atanu Das</td>
+                    <td>8956236589</td>
+                    <td>Pending For Approval</td>
+                    <td><button type="button" class="btn btn-success btn-lg dropdown-toggle hide-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+        <i class="fa-solid fa-plus"></i>
+                        </tr>
+ <tr class="table-primary">
+                             <td>ICICI</td>
+                    <td>105</td>
+                    <td>Prabhakar Mishra</td>
+                    <td>8962450314</td>
+                    <td>Approved</td>
+                    <td><button type="button" class="btn btn-success btn-lg dropdown-toggle hide-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+        <i class="fa-solid fa-plus"></i>
+                        </tr>
+ <tr class="table-success">
+                             <td>SBI</td>
+                    <td>106</td>
+                    <td>Rajneesh Kumar</td>
+                    <td>8952460314</td>
+                    <td>Pending For Approval</td>
+                    <td><button type="button" class="btn btn-success btn-lg dropdown-toggle hide-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+        <i class="fa-solid fa-plus"></i>
+                        </tr>
+ <tr class="table-secondary">
+                             <td>UBI</td>
+                    <td>107</td>
+                    <td>Anurag Singh</td>
+                    <td>5263630314</td>
+                    <td>Pending For Approval</td>
+                    <td><button type="button" class="btn btn-success btn-lg dropdown-toggle hide-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+        <i class="fa-solid fa-plus"></i>
+                        </tr>
+  <tr class="table-active">
+                             <td>1 pay Solution</td>
+                    <td>108</td>
+                    <td>Ameer Khan</td>
+                    <td>8852630314</td>
+                    <td>Approved</td>
+                    <td><button type="button" class="btn btn-success btn-lg dropdown-toggle hide-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+        <i class="fa-solid fa-plus"></i>
+                        </tr>
+<tr class="table-info">                             <td>Mumbai Indians</td>
+                    <td>109</td>
+                    <td>Rohit Sharma</td>
+                    <td>8962630314</td>
+                    <td>Pending For Approval</td>
+                    <td><button type="button" class="btn btn-success btn-lg dropdown-toggle hide-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+        <i class="fa-solid fa-plus"></i>
+                        </tr>
+ <tr class="table-warning">
+                             <td>LSG</td>
+                    <td>110</td>
+                    <td>KL Rahul</td>
+                    <td>8596321485</td>
+                    <td>Approved</td>
+                    <td><button type="button" class="btn btn-success btn-lg dropdown-toggle hide-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+        <i class="fa-solid fa-plus"></i>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
